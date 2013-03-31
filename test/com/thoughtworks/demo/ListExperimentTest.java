@@ -20,11 +20,12 @@ public class ListExperimentTest {
         String expected= "why are you smiling..";
         assertThat(man.smile(), IsEqual.equalTo(expected));
     }
+
     @Test
     public void shouldAddTwoElement(){
-        listExperiment.add("anil");
-        listExperiment.add("kumar");
-        assertTrue(listExperiment.length()==2);
+        stupidBehaviours.add("anil");
+        stupidBehaviours.add("kumar");
+        assertTrue(stupidBehaviours.length()==2);
     }
 
 
