@@ -1,17 +1,24 @@
 package com.thoughtworks.demo;
 
-import com.sun.corba.se.impl.orb.ParserTable;
+import org.hamcrest.core.IsEqual;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertThat;
 
 public class ListExperimentTest {
-         ListExperiment listExperiment=new ListExperiment(5);
+         StupidBehaviours stupidBehaviours =new StupidBehaviours(5);
 
     @Test
     public void shouldAddElement(){
-        listExperiment.add("anil");
-        assertTrue(listExperiment.length()==1);
+        stupidBehaviours.add("anil");
+        assertTrue(stupidBehaviours.length()==1);
+    }
+    @Test
+    public void shouldSayWhyAreYouSmiling(){
+        StupidBehaviours man = new StupidBehaviours(1);
+        String expected= "why are you smiling..";
+        assertThat(man.smile(), IsEqual.equalTo(expected));
     }
 
 }

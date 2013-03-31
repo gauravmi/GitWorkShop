@@ -3,10 +3,10 @@ package com.thoughtworks.demo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListExperiment {
+public class StupidBehaviours {
 
     List<Object> list;
-    public ListExperiment(int size) {
+    public StupidBehaviours(int size) {
         list=new ArrayList<Object>(size);
     }
 
@@ -15,5 +15,10 @@ public class ListExperiment {
     }
     public int length(){
         return list.size();
+    }
+
+    public String smile(){
+        System.out.println("why are you smiling..");
+        return "why are you smiling..";
     }
 }
