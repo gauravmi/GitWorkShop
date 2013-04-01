@@ -28,5 +28,13 @@ public class ListExperimentTest {
         assertTrue(stupidBehaviours.length()==2);
     }
 
+    @Test
+    public void shouldAddThreeElement(){
+        stupidBehaviours.add("anil");
+        stupidBehaviours.add("kumar");
+        stupidBehaviours.add("Gavrav");
+        assertTrue(stupidBehaviours.length()==3);
+    }
+
 
 }
